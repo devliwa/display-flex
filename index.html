@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Column Layout Methods</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #5b85b4;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    /* Navigation Container */
+    .container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      background: linear-gradient(to right, #ffcc33, #ff9966);
+      padding: 15px 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Navigation List */
+    .container ul {
+      display: flex;
+      gap: 15px;
+      padding: 0;
+      margin: 0;
+    }
+
+    .container li {
+      list-style: none;
+    }
+
+    .container a {
+      text-decoration: none;
+      font-weight: 600;
+      color: #fff;
+      padding: 8px 12px;
+      border-radius: 6px;
+      transition: all 0.3s ease;
+    }
+
+    /* Hover Effect */
+    .container a:hover {
+      background-color: rgba(255, 255, 255, 0.3);
+      color: #000;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Page Layout Methods</h1>
+  <nav class="container">
+    <ul>
+      <li><a href="./html-table.html">HTML Table</a></li>
+      <li><a href="./inline-block.html">Inline-Block</a></li>
+      <li><a href="./absolute-position.html">Absolute Positioning</a></li>
+      <li><a href="./float.html">Float</a></li>
+      <li><a href="./flex.html">Flexbox</a></li>
+    </ul>
+  </nav>
+</body>
+
+</html>

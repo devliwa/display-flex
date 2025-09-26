@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Absolute Positioning Example</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #5b85b4;
+      margin: 0;
+      padding: 20px;
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #444;
+    }
+
+    /* Container relative for absolute children */
+    .container {
+      position: relative;
+      height: 500px; /* Give enough height to see the effect */
+      max-width: 1200px;
+      margin: 0 auto;
+      border: 2px dashed #ccc;
+      padding: 20px;
+      border-radius: 12px;
+      background-color: #fff;
+    }
+
+    /* Boxes */
+    .box {
+      position: absolute;
+      background-color: blueviolet;
+      color: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      line-height: 1.6;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+
+    .box:hover {
+      transform: translateY(-5px);
+      background-color: #8a2be2;
+    }
+
+    /* Positioning each box */
+    .one {
+      top: 0;
+      left: 0;
+      width: 25%;
+    }
+
+    .two {
+      top: 0;
+      left: 27%;
+      width: 25%;
+    }
+
+    .three {
+      top: 0;
+      left: 55%;
+      width: 40%;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 900px) {
+      .box {
+        position: static;
+        width: 90%;
+        margin: 10px auto;
+      }
+      .container {
+        height: auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Absolute Positioning</h1>
+  <div class="container">
+    <div class="box one">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus eveniet minus dolor qui laudantium
+        molestias repudiandae reprehenderit impedit aliquid.</p>
+    </div>
+    <div class="box two">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, delectus nostrum. Dolore accusantium id
+        quibusdam! Nemo ea sunt, amet ex aspernatur fugiat praesentium eveniet voluptate?</p>
+    </div>
+    <div class="box three">
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, voluptatem officia nulla minus, sunt nam
+        aliquam quis explicabo consequatur beatae at? Eligendi corrupti quisquam enim accusantium possimus quis esse
+        praesentium!</p>
+    </div>
+  </div>
+</body>
+
+</html>

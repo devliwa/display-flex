@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inline-Block Example</title>
+  <style>
+    /* General body styles */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #5b85b4;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 30px;
+    }
+
+    /* Container for inline-block divs */
+    .container {
+      text-align: center; /* to remove inline-block gaps */
+    }
+
+    .box {
+      display: inline-block;
+      vertical-align: top;
+      background-color: #7b5fcf;
+      color: #fff;
+      padding: 20px;
+      margin: 10px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      box-sizing: border-box;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+
+    /* Widths for each box */
+    .one {
+      width: 25%;
+    }
+
+    .two {
+      width: 25%;
+    }
+
+    .three {
+      width: 40%;
+    }
+
+    /* Hover effect */
+    .box:hover {
+      transform: translateY(-5px);
+      background-color: #a678ff;
+    }
+
+    /* Make responsive */
+    @media (max-width: 900px) {
+      .one,
+      .two,
+      .three {
+        display: block;
+        width: 90%;
+        margin: 15px auto;
+      }
+    }
+
+    p {
+      line-height: 1.5;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Inline-Block Layout</h1>
+  <div class="container">
+    <div class="box one">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus eveniet minus dolor qui laudantium
+        molestias repudiandae reprehenderit impedit aliquid.</p>
+    </div>
+    <div class="box two">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, delectus nostrum. Dolore accusantium id
+        quibusdam! Nemo ea sunt, amet ex aspernatur fugiat praesentium eveniet voluptate?</p>
+    </div>
+    <div class="box three">
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, voluptatem officia nulla minus, sunt nam
+        aliquam quis explicabo consequatur beatae at? Eligendi corrupti quisquam enim accusantium possimus quis esse
+        praesentium!</p>
+    </div>
+  </div>
+</body>
+
+</html>

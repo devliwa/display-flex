@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Table Layout</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #5b85b4;
+      margin: 0;
+      padding: 20px;
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 15px;
+    }
+
+    td {
+      background: linear-gradient(135deg, #7be4d3, #4ab9d4);
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      vertical-align: top;
+      color: #fff;
+      line-height: 1.6;
+      transition: transform 0.3s ease;
+    }
+
+    td:hover {
+      transform: translateY(-5px);
+      background: linear-gradient(135deg, #6fd8c6, #3fa0c4);
+    }
+
+    .col1 {
+      width: 25%;
+    }
+
+    .col2 {
+      width: 25%;
+    }
+
+    .col3 {
+      width: 40%;
+    }
+
+    /* Responsive design for smaller screens */
+    @media (max-width: 900px) {
+      table, tr, td {
+        display: block;
+        width: 100%;
+      }
+
+      td {
+        margin-bottom: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <h1>HTML Table Layout</h1>
+  <table>
+    <tr>
+      <td class="col1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima numquam odit perspiciatis reprehenderit error,
+        ex ea nobis in fuga odio alias minus quia incidunt laboriosam! Accusantium exercitationem amet assumenda
+        numquam?
+      </td>
+      <td class="col2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat similique quisquam vel ab. Labore quibusdam
+        sequi soluta eum repellat nisi pariatur quidem consectetur distinctio ipsum. Expedita fuga ipsa, aperiam
+        dolorem illum optio impedit commodi est inventore laboriosam.
+      </td>
+      <td class="col3">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, dolores? Voluptatem temporibus ipsa adipisci
+        nesciunt doloremque magni nihil autem ipsum, minima porro unde beatae harum molestiae architecto perferendis
+        fuga sed. Sapiente, amet sint delectus harum omnis eum aperiam eligendi laborum.
+      </td>
+    </tr>
+  </table>
+</body>
+
+</html>

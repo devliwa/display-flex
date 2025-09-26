@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Example</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #5b85b4;
+      margin: 0;
+      padding: 20px;
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #444;
+    }
+
+    .container {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .box {
+      background-color: darkseagreen;
+      color: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      box-sizing: border-box;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+      line-height: 1.6;
+      flex: 1 1 25%; /* Grow, shrink, base width */
+    }
+
+    .box:hover {
+      transform: translateY(-5px);
+      background-color: #5aa36d;
+    }
+
+    /* Responsive layout */
+    @media (max-width: 900px) {
+      .box {
+        flex: 1 1 90%;
+        margin: 10px auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Flexbox Layout</h1>
+  <div class="container">
+    <div class="box">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus eveniet minus dolor qui laudantium
+        molestias repudiandae reprehenderit impedit aliquid, fugit eligendi placeat, unde praesentium, vel veritatis
+        voluptate ex corporis magni deleniti.</p>
+    </div>
+    <div class="box">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque nobis rem ipsa voluptatibus, recusandae illum
+        consequuntur cum, nulla dolores eligendi fuga harum labore animi dolorum asperiores voluptate praesentium
+        beatae.</p>
+    </div>
+    <div class="box">
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, voluptatem officia nulla minus, sunt nam
+        aliquam quis explicabo consequatur beatae at? Obcaecati repudiandae commodi, earum eaque velit voluptatum illum
+        temporibus.</p>
+    </div>
+  </div>
+</body>
+
+</html>

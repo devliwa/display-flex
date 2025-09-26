@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Float Layout Example</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #5b85b4;
+      margin: 0;
+      padding: 20px;
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #444;
+    }
+
+    /* Container using Flexbox instead of float */
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .box {
+      background-color: coral;
+      color: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      box-sizing: border-box;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+      line-height: 1.6;
+    }
+
+    .one {
+      flex: 0 0 25%;
+    }
+
+    .two {
+      flex: 0 0 25%;
+    }
+
+    .three {
+      flex: 0 0 40%;
+    }
+
+    /* Hover effect */
+    .box:hover {
+      transform: translateY(-5px);
+      background-color: #ff7f50;
+    }
+
+    /* Responsive layout */
+    @media (max-width: 900px) {
+      .one,
+      .two,
+      .three {
+        flex: 0 0 90%;
+        margin: 0 auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Float Layout (Modernized)</h1>
+  <div class="container">
+    <div class="box one">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus eveniet minus dolor qui laudantium
+        molestias repudiandae reprehenderit impedit aliquid, fugit eligendi placeat, unde praesentium, vel veritatis
+        voluptate ex corporis magni deleniti.</p>
+    </div>
+    <div class="box two">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, delectus nostrum. Dolore accusantium id
+        quibusdam! Nemo ea sunt, amet ex aspernatur fugiat praesentium eveniet voluptate?</p>
+    </div>
+    <div class="box three">
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, voluptatem officia nulla minus, sunt nam
+        aliquam quis explicabo consequatur beatae at? Obcaecati repudiandae commodi, earum eaque velit voluptatum illum
+        temporibus.</p>
+    </div>
+  </div>
+</body>
+
+</html>
